@@ -1,0 +1,38 @@
+body {
+    background-color: darkslategrey;
+    color: blanchedalmond;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vh;
+    margin: auto;
+    margin-top: 7rem;
+    width: 50vh;
+}
+.radioBtn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-inline: 5rem;
+}
+
+label {
+    /* width: 45vw; */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#title {
+    margin-left: 3rem;
+}
+
+#littleBody {
+    background-color: darkgreen;
+    padding: 1rem;
+}
+
+#submitOrder {
+    width: 100%;
+    height: 5vh;
+    border-radius: 2rem;
+}
+pre {
+    font-size: larger;
+}

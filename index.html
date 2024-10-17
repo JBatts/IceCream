@@ -5,27 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
 
 <body>
-
-    <label>
+    <div id="littleBody">
+    <label id="title">
+        Number of Scoops: <input type="number" value="1" id="scoops">
+    </label>
+    <br>
+    <label class = "radioBtn">
         <input type="radio" name="container" id="cup" checked> Cup
     </label>
-    <label>
+    <label class = "radioBtn">
         <input type="radio" name="container" id="cone"> Cone
     </label>
+
     <fieldset id="toppings">
         <legend>Toppings</legend>
-    </fieldset>
-</body>
-<script>
-    function onContainerClicked(event) {
-        toppings.style.display = cup.checked ? "block" : "none"
-    }
-    cup.addEventListener("click", onContainerClicked)
-    cone.addEventListener("click", onContainerClicked)
+        <label>
+            <input type="checkbox" id="sprinkles"> Sprinkles ($0.50)
+        </label>
 
-</script>
+        <label>
+            <input type="checkbox" id="whipped"> Whipped ($0.25)
+        </label>
+
+        <label>
+            <input type="checkbox" id="fudge"> Hot Fudge ($1.25)
+            </label>
+
+        <label>
+            <input type="checkbox" id="cherry"> Cherry ($0.25)
+        </label>
+
+    </fieldset>
+    <br>
+    <button id="submitOrder">Submit Order</button>
+    <pre id="outputReceipt">?</pre>
+     </div>
+</body>
+
 </html>
