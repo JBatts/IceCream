@@ -1,4 +1,4 @@
-body {
+body { 
     background-color: darkslategrey;
     color: blanchedalmond;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -14,7 +14,6 @@ body {
 }
 
 label {
-    /* width: 45vw; */
     display: inline-block;
     white-space: nowrap;
 }
