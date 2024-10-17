@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <label>
+        <input type="radio" name="container" id="cup" checked> Cup
+    </label>
+    <label>
+        <input type="radio" name="container" id="cone"> Cone
+    </label>
+    <fieldset id="toppings">
+        <legend>Toppings</legend>
+    </fieldset>
+</body>
+<script>
+    function onContainerClicked(event) {
+        toppings.style.display = cup.checked ? "block" : "none"
+    }
+    cup.addEventListener("click", onContainerClicked)
+    cone.addEventListener("click", onContainerClicked)
+
+</script>
+</html>
